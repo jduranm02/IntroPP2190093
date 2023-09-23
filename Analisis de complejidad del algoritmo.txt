@@ -1,0 +1,18 @@
+Analisis de complejidad del algoritmo Multiplicación de matrices.
+
+La función multiplicarMatrices toma dos matrices A y B como entrada, donde A es de tamaño n x m y B es de tamaño m x p.
+
+La función primero verifica si las dimensiones de las matrices son compatibles para la multiplicación, es decir, si el número de columnas de A es igual al número de filas de B. Esto requiere una operación de comparación que es O(1).
+
+Luego, crea una matriz C de tamaño n x p para almacenar el resultado de la multiplicación. La creación de la matriz C toma tiempo O(n * p), donde n y p son las dimensiones de la matriz resultante.
+
+Después, se ejecutan tres bucles anidados:
+
+El primer bucle para i se ejecuta n veces (número de filas de A).
+El segundo bucle para j se ejecuta p veces (número de columnas de B).
+El tercer bucle para k se ejecuta m veces (número de columnas de A o filas de B).
+Dentro del tercer bucle, se realiza una multiplicación y una suma, lo que es una operación constante O(1).
+
+El tiempo total de ejecución de los tres bucles anidados es O(n * p * m).
+
+Por lo tanto, la complejidad temporal total de la multiplicación de matrices es O(n * p * m).

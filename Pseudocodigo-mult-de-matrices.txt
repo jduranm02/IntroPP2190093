@@ -1,0 +1,19 @@
+Pseudocodigo multiplicación de matrices.
+
+Función multiplicarMatrices(A, B):
+    n = longitud(A) # Número de filas de A
+    m = longitud(A[0]) # Número de columnas de A
+    p = longitud(B[0]) # Número de columnas de B
+
+    si m ≠ longitud(B):
+        devolver "No se pueden multiplicar las matrices, dimensiones incorrectas"
+
+    C = matriz de tamaño n x p
+
+    para i desde 0 hasta n-1:
+        para j desde 0 hasta p-1:
+            C[i][j] = 0
+            para k desde 0 hasta m-1:
+                C[i][j] = C[i][j] + A[i][k] * B[k][j]
+
+    devolver C
